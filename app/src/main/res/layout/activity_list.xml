@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListActivity">
+
+
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NUM"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nomeformando"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="NOME DO FORMANDO"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/num"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/telefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="TELEFONE"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/nomeformando"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/listViewContacts"
+        android:layout_width="415dp"
+        android:layout_height="463dp"
+        app:layout_constraintTop_toBottomOf="@+id/nomeformando"
+        tools:layout_editor_absoluteX="-2dp" />
+
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:onClick="Logout"
+        android:text="LOGOUT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonInsertContact" />
+
+    <Button
+        android:id="@+id/buttonInsertContact"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:onClick="InsertContactButtonClicked"
+        android:text="INSERIR CONTACTO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewContacts" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

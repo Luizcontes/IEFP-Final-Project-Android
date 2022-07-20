@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertActivity">
+
+    <EditText
+        android:id="@+id/etNumero"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:ems="20"
+        android:hint="Numero"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNome"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:ems="20"
+        android:hint="Nome"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNumero" />
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:ems="20"
+        android:hint="Telefone"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNome" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:ems="20"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etIdade" />
+
+    <EditText
+        android:id="@+id/etIdade"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:ems="20"
+        android:hint="Idade"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPhone" />
+
+    <Button
+        android:id="@+id/btInsertContact"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="InsertContactButtonClicked"
+        android:text="INSERIR CONTACTO"
+        app:layout_constraintBottom_toTopOf="@+id/btVoltar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btVoltar"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="VoltarButtonClicked"
+        android:text="Voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

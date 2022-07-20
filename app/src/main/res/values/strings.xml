@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">LISTA DE CONTATOS</string>
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="do_login">Login</string>
+    <string name="goto_register">Register</string>
+    <string name="prompt_email">Email</string>
+    <string name="do_register">Register</string>
+    <string name="do_cancel">Cancel</string>
+    <string name="wrong_credentials">Credenciais Erradas!</string>
+    <string name="correct_credentials">Login com SUCESSO</string>
+    <string name="UserInserted">Utilizador Inserido</string>
+    <string name="UserInsertedError">ERRO ao inserir o utilizador</string>
+</resources>
